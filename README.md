@@ -15,3 +15,24 @@ disallowed (or to advise browsers of the circumstances where it should be
 allowed) by adding the `X-Frame-Options` and `Content-Security-Policy` HTTP
 headers.
 
+Building the extension
+----------------------
+
+guacamole-framebreak is built using [Apache Maven](http://maven.apache.org).
+Building guacamole-framebreak should be as simple as running a single command
+within the root of the source tree:
+
+    $ mvn package
+
+The extension `.jar` file can then be found within the `target/` subdirectory,
+which Maven will have automatically created if it didn't exist.
+
+Installation
+------------
+
+To install guacamole-framebreak, the extension `.jar` file must be copied to
+the `extensions/` subdirectory of
+[`GUACAMOLE_HOME`](http://guacamole.incubator.apache.org/doc/gug/configuring-guacamole.html#guacamole-home). There are no properties which must be set within
+`guacamole.properties` - simply copying the extension `.jar` in place and
+restarting Tomcat is sufficient.
+
