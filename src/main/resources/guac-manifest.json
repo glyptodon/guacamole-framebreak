@@ -1,0 +1,16 @@
+{
+
+    "guacamoleVersion" : "*",
+
+    "name"      : "Framebreaking extension for Guacamole",
+    "namespace" : "guac-framebreak",
+
+    "js" : [
+        "scripts/framebreak.js"
+    ],
+
+    "css" : [
+        "styles/framebreak.css"
+    ]
+
+}
